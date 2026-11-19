@@ -176,3 +176,7 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-vis
 @keyframes service-orbit{to{rotate:360deg}}
 @media(max-width:760px){.service-hero-grid{grid-template-columns:1fr;gap:20px}.service-hero-visual{min-height:270px}.service-hero-copy .display{font-size:43px}}
 @media(prefers-reduced-motion:reduce){.service-hero-core,.service-hero-orbit{animation:none}}
+
+.service-directory-intro{max-width:740px;margin:0 0 34px}
+.service-directory-intro .section-title{margin:10px 0}
+.service-directory-intro>p{font-size:14px;line-height:1.8}
