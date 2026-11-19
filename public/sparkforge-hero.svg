@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+<title id="title">Sparkforge faceted crystal and connected engineering network</title><desc id="desc">A dimensional faceted navy and orange crystal with a luminous gold centre, fine gold network connections and flowing navy and orange ribbons, inspired by the approved Sparkforge brand moodboard.</desc>
+<defs>
+<linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4c8ab9"/><stop offset=".34" stop-color="#1c5689"/><stop offset=".7" stop-color="#12375f"/><stop offset="1" stop-color="#071c35"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#75a9ce"/><stop offset=".45" stop-color="#1d568c"/><stop offset="1" stop-color="#092748"/></linearGradient>
+<linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb64b"/><stop offset=".4" stop-color="#f07832"/><stop offset="1" stop-color="#a94319"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0b8"/><stop offset=".45" stop-color="#dca94b"/><stop offset="1" stop-color="#9e681c"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fff9db" stop-opacity="1"/><stop offset=".18" stop-color="#ffcb63" stop-opacity=".9"/><stop offset=".52" stop-color="#f07832" stop-opacity=".2"/><stop offset="1" stop-color="#f07832" stop-opacity="0"/></radialGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<ellipse cx="535" cy="510" rx="320" ry="56" fill="#e9a647" opacity=".24" filter="url(#soft)"/>
+<path d="M24 477C180 375 306 396 446 470s274 91 427-25" fill="none" stroke="url(#navy)" stroke-width="58" stroke-linecap="round"/>
+<path d="M10 452C178 352 304 376 440 446s281 85 448-34" fill="none" stroke="url(#orange)" stroke-width="16" stroke-linecap="round"/>
+<path d="M35 533c172-78 266-45 388 7s267 60 432-15" fill="none" stroke="url(#gold)" stroke-width="4" opacity=".9"/>
+<g fill="none" stroke="url(#gold)" stroke-width="2" opacity=".9"><path d="m160 158 130-90 188 22 178 104 73 158-166 113-214-30-190-126z"/><path d="m290 68 59 341M478 90 349 409m307-215L160 158m468 26L349 409m380-57L290 68"/></g>
+<g fill="url(#gold)"><circle cx="160" cy="158" r="8"/><circle cx="290" cy="68" r="8"/><circle cx="478" cy="90" r="8"/><circle cx="656" cy="194" r="8"/><circle cx="729" cy="352" r="8"/><circle cx="563" cy="465" r="7"/><circle cx="349" cy="409" r="8"/><circle cx="775" cy="85" r="6"/></g>
+<g transform="translate(245 74)">
+<!-- crystal silhouette -->
+<path d="M235 0 422 104 390 293 233 393 72 291 43 105Z" fill="url(#navy)" stroke="url(#gold)" stroke-width="4"/>
+<!-- upper facets -->
+<path d="M235 0 43 105 233 183Z" fill="url(#orange)"/>
+<path d="M235 0 422 104 233 183Z" fill="url(#blue)"/>
+<path d="M43 105 72 291 233 183Z" fill="#0d3157"/>
+<path d="M422 104 390 293 233 183Z" fill="#0a294c"/>
+<!-- lower facets -->
+<path d="M72 291 233 183 233 393Z" fill="url(#orange)"/>
+<path d="M233 183 390 293 233 393Z" fill="url(#navy)"/>
+<path d="M43 105 235 0 233 183Z" fill="#f58b32" opacity=".55"/>
+<path d="M235 0 422 104 233 183Z" fill="#83b2d3" opacity=".3"/>
+<path d="M233 183 390 293 233 393 72 291Z" fill="none" stroke="#f4c66a" stroke-width="2"/>
+<path d="m233 0 0 393M43 105l347 188M422 104 72 291" fill="none" stroke="#f7d78e" stroke-width="2" opacity=".65"/>
+<circle cx="233" cy="184" r="104" fill="url(#glow)"/>
+<path d="m233 116 18 48 48 20-48 18-18 48-18-48-48-18 48-20z" fill="url(#gold)" opacity=".9"/>
+<circle cx="233" cy="184" r="12" fill="#fff9dc"/>
+</g>
+<g fill="none" stroke="url(#gold)" stroke-width="2"><path d="m660 84 78-48 62 29 40-35M738 36l75 105 62 15"/></g>
+<g fill="url(#gold)"><circle cx="738" cy="36" r="8"/><circle cx="800" cy="65" r="7"/><circle cx="840" cy="30" r="7"/><circle cx="813" cy="141" r="8"/><circle cx="875" cy="156" r="6"/></g>
+</svg>

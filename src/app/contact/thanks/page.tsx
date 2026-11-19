@@ -1,0 +1,3 @@
+import Link from "next/link";
+export const metadata={title:"Enquiry Received"};
+export default function Thanks(){return <main><section className="page-hero"><div className="container thanks-panel"><span className="eyebrow">Thank you</span><h1 className="display">Your enquiry has been submitted.</h1><p>Thank you for contacting Sparkforge Technologies. Your project details have been sent through our website enquiry form. Our team will review the information and follow up using the contact details you provided.</p><div className="hero-actions"><Link className="btn btn-primary" href="/">Back to homepage</Link><Link className="btn btn-outline" href="/services">Explore our services</Link></div></div></section></main>}
