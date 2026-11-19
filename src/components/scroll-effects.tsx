@@ -8,7 +8,7 @@ export function ScrollEffects(){
   const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if(!reduce&&"IntersectionObserver"in window){
    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:"0px 0px -45px 0px"});
-   const observe=()=>document.querySelectorAll("main > section:not(.hero), main .card, main .technology-panel, main .case-visual").forEach((el,index)=>{if(!el.classList.contains("scroll-reveal")){el.classList.add("scroll-reveal");el.style.setProperty("--reveal-delay",(Math.min(index%6,5)*65)+"ms");observer.observe(el)}});
+   const observe=()=>document.querySelectorAll<HTMLElement>("main > section:not(.hero), main .card, main .technology-panel, main .case-visual").forEach((el,index)=>{if(!el.classList.contains("scroll-reveal")){el.classList.add("scroll-reveal");el.style.setProperty("--reveal-delay",(Math.min(index%6,5)*65)+"ms");observer.observe(el)}});
    observe();const mutation=new MutationObserver(observe);mutation.observe(document.body,{childList:true,subtree:true});
    return()=>{window.removeEventListener("scroll",update);window.removeEventListener("resize",update);observer.disconnect();mutation.disconnect()};
   }
