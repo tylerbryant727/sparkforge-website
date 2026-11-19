@@ -85,3 +85,35 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-vis
 .hero-copy .display span{background:linear-gradient(100deg,var(--orange),#bd842e);background-clip:text;-webkit-background-clip:text;color:transparent!important}
 @media(max-width:760px){.hero-visual{min-height:350px}.hero-float{font-size:8px;padding:7px 9px}.hero-visual-caption{top:0;left:0}}
 @media(prefers-reduced-motion:reduce){.hero-float{animation:none}.hero-visual>img,.hero-visual-orbit,.hero-visual-glow{transform:none!important;transition:none}}
+
+/* Distinct visual signatures for the seven engineering divisions */
+.service-card-grid{align-items:stretch}
+.service-card{position:relative;overflow:hidden;isolation:isolate;min-height:300px;padding:22px;display:flex;flex-direction:column;align-items:flex-start}
+.service-card:before{content:"";position:absolute;z-index:-1;width:190px;height:190px;right:-85px;top:-85px;border-radius:50%;background:radial-gradient(circle,#d4a74222,transparent 68%);transition:transform .6s}
+.service-card:hover:before{transform:scale(1.7)}
+.service-visual{position:relative;display:grid;place-items:center;width:100%;height:112px;margin-bottom:20px;overflow:hidden;border-radius:6px;background:linear-gradient(130deg,#edf3f9,#f7f2e8)}
+.service-visual i{position:absolute;display:block;border:1px solid #173b6650;border-radius:50%;width:72px;height:72px;transition:transform .5s,border-color .5s}
+.service-visual i:nth-child(2){width:104px;height:104px;border-color:#d4a742aa}
+.service-visual i:nth-child(3){width:138px;height:138px;border-color:#e76b1f55}
+.service-visual b{position:relative;z-index:1;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--navy);color:white;font:800 11px var(--font-body);box-shadow:0 6px 18px #173b6630}
+.service-card:hover .service-visual i:nth-child(1){transform:scale(1.35) rotate(25deg)}
+.service-card:hover .service-visual i:nth-child(2){transform:scale(.88) rotate(-25deg)}
+.service-card:hover .service-visual i:nth-child(3){transform:scale(1.08)}
+.service-card-1 .service-visual{background:linear-gradient(130deg,#eaf2ff,#f8f4e8)}
+.service-card-1 .service-visual i{border-style:dashed}
+.service-card-2 .service-visual{background:linear-gradient(130deg,#e9f0f7,#f3eee6)}
+.service-card-2 .service-visual i:nth-child(1){border-radius:8px;transform:rotate(45deg)}
+.service-card-3 .service-visual{background:linear-gradient(130deg,#fff0e6,#f6f0e5)}
+.service-card-3 .service-visual i{border-radius:12px}
+.service-card-4 .service-visual{background:linear-gradient(130deg,#eaf2f5,#f7f2e8)}
+.service-card-4 .service-visual i:nth-child(1){width:54px;height:54px;border-radius:12px}
+.service-card-5 .service-visual{background:linear-gradient(130deg,#f4efe5,#eaf2ff)}
+.service-card-5 .service-visual i{transform:rotate(45deg);border-radius:8px}
+.service-card-6 .service-visual{background:linear-gradient(130deg,#f0eafa,#f8f1e7)}
+.service-card-6 .service-visual i{border-radius:18px 50% 18px 50%}
+.service-card h3{margin:0 0 8px}
+.service-card p{flex:1}
+.service-card-link{display:flex;align-items:center;gap:8px;color:var(--orange);font-size:12px;font-weight:850;margin-top:12px}
+.service-card-link span{transition:transform .25s}
+.service-card:hover .service-card-link span{transform:translate(3px,-3px)}
+@media(prefers-reduced-motion:reduce){.service-visual i,.service-card:before,.service-card-link span{transition:none}}
