@@ -36,3 +36,18 @@ body{font-size:16px}
 .about-role{font-size:12px!important;color:var(--orange)!important;font-weight:800}
 @media(max-width:760px){.brand img{width:238px;max-height:66px}.mobile-nav{display:flex}.about-intro-grid,.about-lead-grid{grid-template-columns:1fr}.about-brand-panel{padding:22px}.about-brand-panel img{max-width:420px}.about-intro-grid .content-prose h2{font-size:29px}}
 @media(max-width:540px){.brand img{width:205px}.footer-brand{width:250px}}
+
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(260px,.8fr);gap:32px;align-items:start}
+.contact-form{padding:32px}
+.contact-aside{position:sticky;top:120px}
+.contact-aside h3{font-size:24px}
+.contact-aside strong{font-size:12px;color:var(--navy)}
+.contact-aside a:not(.btn){color:var(--orange);font-weight:700;overflow-wrap:anywhere}
+.contact-region{margin-top:28px;font-size:12px}
+.privacy-consent{display:flex;gap:10px;align-items:flex-start;margin:20px 0 12px;font-size:12px;line-height:1.7;color:var(--muted)}
+.privacy-consent input{margin-top:4px;accent-color:var(--orange);flex:0 0 auto}
+.privacy-consent a{color:var(--orange);text-decoration:underline;font-weight:700}
+.form-note{font-size:11px;line-height:1.7}
+.form-status{padding:14px;background:#edf4ec;border-left:3px solid #3e8050;color:#244b31;font-size:12px;line-height:1.7}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #d4a742;outline-offset:3px}
+@media(max-width:760px){.contact-layout{grid-template-columns:1fr}.contact-aside{position:static}.contact-form{padding:20px}}
