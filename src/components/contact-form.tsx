@@ -14,7 +14,7 @@ export function ContactForm(){
     const encoded=new URLSearchParams(Array.from(formData.entries()).map(([key,value])=>[key,String(value)] as [string,string]));
     encoded.set("form-name","project-enquiry");
     try{
-      const response=await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:encoded.toString()});
+      const response=await fetch("/__forms.html",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:encoded.toString()});
       if(!response.ok) throw new Error("The enquiry could not be submitted. Please try again or contact us directly.");
       setSubmitted(true);
       formElement.reset();
