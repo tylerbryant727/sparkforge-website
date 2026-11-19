@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - build/phase-1-website
+      - work/real-project-evidence
   pull_request:
     branches:
       - main
