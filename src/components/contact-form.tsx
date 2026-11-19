@@ -9,14 +9,15 @@ export function ContactForm(){
     event.preventDefault();
     setSubmitting(true);
     setError("");
-    const formData=new FormData(event.currentTarget);
+    const formElement=event.currentTarget;
+    const formData=new FormData(formElement);
     const encoded=new URLSearchParams(Array.from(formData.entries()).map(([key,value])=>[key,String(value)] as [string,string]));
     encoded.set("form-name","project-enquiry");
     try{
       const response=await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:encoded.toString()});
       if(!response.ok) throw new Error("The enquiry could not be submitted. Please try again or contact us directly.");
       setSubmitted(true);
-      event.currentTarget.reset();
+      formElement.reset();
     }catch{
       setError("We could not send your enquiry just now. Please try again or contact us directly by email or WhatsApp.");
     }finally{
